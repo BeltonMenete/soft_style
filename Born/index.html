@@ -6,12 +6,11 @@
             name="viewport"
             content="width=device-width, initial-scale=1.0"
         />
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
         <title>Soft Style</title>
-        <style>
-            * {
-                font-family: sans-serif;
-            }
-        </style>
     </head>
     <body>
         <!--
@@ -30,22 +29,24 @@
                 <a href="#">Flexbox</a>
                 <a href="#">CSS Grid</a>
             </nav>
+            <p>Test Paragraph</p>
         </header>
         <article>
-            <h2 style="color: cyan">The basic Soft style of the web: HTML</h2>
-            <img
-                src="/images/laura-jones.jpg"
-                alt="Squared HeadShot of Laura Jones"
-                width="50"
-                height="50"
-            />
-            <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+            <header>
+                <h2>The basic Soft style of the web: HTML</h2>
+                <img
+                    src="/images/laura-jones.jpg"
+                    alt="Squared HeadShot of Laura Jones"
+                    width="50"
+                    height="50"
+                />
+                <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+            </header>
 
             <img
                 src="/images/post-img.jpg"
                 alt="HTML Code Screenshot"
                 width="500px"
-                height="200"
             />
 
             <h2>The basic Soft Style of the web</h2>
@@ -99,9 +100,9 @@
             </ul>
 
             <p>Hopefully you learned something new here. See you next time!</p>
-            <aside id="posts">
+            <aside>
                 <h4>Related Posts</h4>
-                <ul>
+                <ul class="related-list">
                     <li>
                         <img
                             src="/images/related-1.jpg"
@@ -110,15 +111,17 @@
                             width="75px"
                         />
                         <a href="#">How to learn Web Development</a>
+                        <p class="related-author">By Patricia</p>
                     </li>
                     <li>
                         <img
                             src="/images/related-2.jpg"
                             alt="The Unknown Power of CSS"
                             height="75px"
-                            width="50px"
+                            width="75px"
                         />
                         <a href="#">The Unknown Powers of CSS</a>
+                        <p class="related-author">By Sonia</p>
                     </li>
                     <li>
                         <img
@@ -128,11 +131,19 @@
                             width="75px"
                         />
                         <a href="#">Why JavaScript is Awesome</a>
+                        <p class="related-author">By Belton</p>
                     </li>
                 </ul>
-                <p>By Belton</p>
             </aside>
         </article>
-        <footer>Copyright &copy; 2030 by The Code Magazine</footer>
+        <footer>
+            <p id="copyright">Copyright &copy; 2030 by The Code Magazine</p>
+        </footer>
+
+        <script>
+            const relatedList = document.getElementsByClassName('related-author')
+
+            console.log(relatedList)
+        </script>
     </body>
 </html>
