@@ -6,7 +6,7 @@ h3,
 h4,
 p,
 li {
-    font-family: serif;
+    font-family: 'Roboto', serif;
 }
 
 h1,
@@ -67,4 +67,36 @@ footer p {
 
 .related-list {
     list-style: none;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+}
+
+aside {
+    background-color: #f7f7f7;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #1098ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:active {
+    background-color: black;
+    color: #fff;
+    font-style: italic;
 }
