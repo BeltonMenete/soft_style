@@ -7,10 +7,11 @@ article {
 
 article h2:first-child {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .shipping-cost {
-    color: #444;
+    color: #777;
     font-weight: bold;
 }
 
@@ -27,7 +28,7 @@ li {
 }
 
 button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #fff;
     border: none;
     background-color: black;
