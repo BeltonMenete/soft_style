@@ -9,10 +9,6 @@ article h2:first-child {
     text-align: center;
 }
 
-img {
-    display: flex;
-}
-
 .shipping-cost {
     color: #444;
     font-weight: bold;
@@ -20,6 +16,10 @@ img {
 
 a:link {
     color: black;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 li {
@@ -31,4 +31,9 @@ button {
     color: #fff;
     border: none;
     background-color: black;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
 }
